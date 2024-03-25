@@ -1,0 +1,39 @@
+public class Order {
+	
+	public static void result(int A[], int B[], int C[] ) {
+		int i = 0;
+     	if(A[i]<A[i+1] && A[i]<A[A.length-1] && A[i+1]<A[i+3]) {
+				System.out.println("Ascending Order");
+			}else if(A[i]>A[i+1] && A[i]>A[A.length-1] && A[i+1]>A[i+3]) {
+				System.out.println("Descending Order");
+			}else {
+				System.out.println("Random Order");
+			}
+     	
+     	if(B[i]<B[i+1] && B[i]<B[B.length-1] && B[i+1]<B[i+3]) {
+			System.out.println("Ascending Order");
+		}else if(B[i]>B[i+1] && B[i]>B[B.length-1] && B[i+1]>B[i+3]) {
+			System.out.println("Descending Order");
+		}else {
+			System.out.println("Random Order");
+		}
+     	
+     	if(C[i]<C[i+1] && C[i]<C[C.length-1] && C[i+2]<C[i+3]) {
+			System.out.println("Ascending Order");
+		}else if(C[i]>C[i+1] && C[i]>C[C.length-1] && C[i+1]>C[i+3] ) {
+			System.out.println("Descending Order");
+		}else {
+			System.out.println("Random Order");
+		}    		
+	}
+	
+	public static void main(String[] args) {
+		int A[] = { 5,14,35,90,139 };
+		int B[] = { 88,67,35,14,-12 };
+		int C[] = { 65,14,129,34,7 };
+		
+		Order.result( A, B, C );
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.Arrays;
+
+public class Equal {
+	
+	
+	public static void main(String[] args) {	
+		int A[]= { 23, 60, 94, 3, 102 };
+		int B[] = { 42, 16, 74 };
+		int size = A.length;
+		int size2 = B.length;
+		int[] result = new int[A.length + B.length];
+		
+		System.arraycopy(A, 0, result, 0, size);	
+		System.arraycopy( B, 0, result, size, size2);
+		
+		System.out.println(Arrays.toString(result));
+	}
+	
+		}

@@ -1,0 +1,44 @@
+package com.assignment4;
+
+public class Arrays {
+   
+	public static void main(String[] args) {
+		int arr[] = new int[9];
+		for(int element:arr) {
+			System.out.println(element);
+		}
+		
+	}
+	
+	public static void main3(String[] args) {
+		int arr[] = new int [5];
+		int index = 0;
+		
+		for(index = 0; index < 5; index++) {
+			System.out.println(arr[index]);
+		}
+	}
+
+	public static void main1(String[] args) {  
+	
+	int arr[] = new int [3];
+      int index = 0;
+      do {
+    	  System.out.println(arr [index]);
+    	  ++index;
+      }while(index<3);
+      
+    }
+    
+    public static void main2(String[] args) {  
+    int arr[] = new int [4];
+    int index = 0;
+    
+    while( index < 4 ){
+    	System.out.println(arr[index]);
+    	index ++;
+    }
+  	  
+    }   
+    
+}

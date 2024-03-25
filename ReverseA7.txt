@@ -1,0 +1,23 @@
+package com.assignment4;
+ 
+import java.io.*;
+
+public class Equal {
+	
+	public static void Reverse(int A[], int size ){
+		int i;
+	    int j;
+     	for(i=0; i<size; i++) {
+				System.out.println(A[(size-1)-i]);
+			}
+			
+		}
+		
+	
+		public static void main(String[] args) {
+			int A[]= {10, 20, 30, 40};
+			int size = 4;
+			
+			Equal.Reverse(A, size);
+		}
+}

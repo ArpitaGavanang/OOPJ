@@ -1,0 +1,55 @@
+package com.assignment4;
+ 
+import java.io.*;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Equal {
+	private static Scanner sc = new Scanner(System.in);
+	public static void acceptRecord(int A[]) {
+		int index;
+		if(A != null) {
+			for(index = 0; index<A.length; index ++) {
+				System.out.println("Enter an element: " );
+				 A[index] = sc.nextInt(); 
+			}
+			
+		}
+	}
+	
+	public static void avg( int A[] ) {
+		int i=0;
+		for(i=0; i<A.length; i++) {
+			if((i+i+1+i+2)%3 ==0)
+			System.out.println((A[i]+A[i+1]+A[i+2])/3);
+			else
+				System.out.println();
+		}
+		}
+		
+		
+		
+	
+	
+	public static void printRecord(int A[]) {
+		if(A != null) {
+			for(int index = 0; index<A.length; index ++) {
+				System.out.println(A[index]); 
+			}
+			System.out.println();
+	}
+	}	
+	
+	public static void main(String[] args) {
+		int A[] = new int[5];
+	
+		Equal.acceptRecord(A);
+		Equal.printRecord(A);
+		
+		Equal.avg(A);
+		
+		
+	}
+	
+	
+		}
